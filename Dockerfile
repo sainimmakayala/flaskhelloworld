@@ -3,10 +3,10 @@ FROM python:2.7-alpine
 RUN mkdir /app
 WORKDIR /app
 
-COPY requirements.txt requirements.txt
+COPY https://github.com/sainimmakayala/flaskhelloworld/blob/master/requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-COPY . .
+COPY https://github.com/sainimmakayala/flaskhelloworld .
 
 LABEL maintainer="Sai <sai.sai@gmail.com>"
 
